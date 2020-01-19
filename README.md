@@ -1,2 +1,0 @@
-# python-course
-Python coding
