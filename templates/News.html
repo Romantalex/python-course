@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <title>Топ новостей из России</title>
+    <link rel = 'stylesheet' href = 'static/css/style.css'>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <header class="main-header">
+      <nav class="main-menu">
+            <ul>
+              <li><a href="Main_page.html">О нас</a></li>
+              <li><a href="News.html">Новости и комментарии</a></li>
+              <li><a href="Contacts.html">Контакты</a></li>
+            </ul>
+          </nav>
+
+        <div class="container">
+    <ul class="news">
+        <li class="media">
+    <img src="static/img/nav-arrow.jpg" class="mr-3" alt="...">
+    <div class="media-body">
+      <h5 class="mt-0 mb-1">Кремль не исключил домашний режим для пожилых сотрудников администрации - РБК</h5>
+    Читайте подробнее в источнике...
+    </div>
+    </li>
+        <li class="media my-4">
+    <img src="static/img/nav-arrow.jpg" class="mr-3" alt="...">
+    <div class="media-body">
+      <h5 class="mt-0 mb-1">Кремль вновь опроверг возможность закрытия Москвы из-за коронавируса - Lenta.ru</h5>
+      Читайте подробнее в источнике...
+    </div>
+    </li>
+        <li class="media">
+    <img src="static/img/nav-arrow.jpg" class="mr-3" alt="...">
+    <div class="media-body">
+      <h5 class="mt-0 mb-1">В Минздраве дали прогноз по спаду распространения коронавируса - Lenta.ru</h5>
+        Читайте подробнее в источнике...
+    </div>
+    </li>
+    </ul>
+    <ul class="news">
+  <li class="media">
+    <img src="static/img/nav-arrow.jpg" class="mr-3" alt="...">
+    <div class="media-body">
+      <h5 class="mt-0 mb-1">В России ужесточат ответственность за нарушение правил карантина - Lenta.ru</h5>
+    Читайте подробнее в источнике...
+    </div>
+  </li>
+  <li class="media my-4">
+    <img src="static/img/nav-arrow.jpg" class="mr-3" alt="...">
+    <div class="media-body">
+      <h5 class="mt-0 mb-1">ФСБ предотвратила теракт в Кабардино-Балкарии - РИА НОВОСТИ</h5>
+    Читайте подробнее в источнике...    </div>
+  </li>
+  <li class="media">
+    <img src="static/img/nav-arrow.jpg" class="mr-3" alt="...">
+    <div class="media-body">
+      <h5 class="mt-0 mb-1">Обновленная Skoda Rapid: комплектации и сниженные цены - Авторевю</h5>
+    Читайте подробнее в источнике...
+    </div>
+  </li>
+</ul>
+   </div>
+
+    <section class="contacts">
+      <div class="container">
+        <h2 class="contacts-title">Оставьте свой комментарий:</h2>
+        <form class="contacts-form" action="/News" method="post">
+          <table>
+            <tr>
+              <td class="title">
+                <label for="fullname">Имя:</label>
+              </td>
+              <td class="field">
+                <input type="text" id="fullname" name="fullname" placeholder="Введите Ваше имя">
+              </td>
+            </tr>
+            <tr>
+              <td class="title">
+                <label for="age">Возраст:</label>
+              </td>
+              <td class="field">
+                <input type="text" id="age" name="age" placeholder="Введите Ваш возраст">
+              </td>
+            </tr>
+            <tr>
+              <td class="title">Пол:</td>
+              <td class="field">
+                <label><input type="radio" id="man" name="sex" value="man">Мужской</label>
+                <label><input type="radio" id="woman" name="sex" value="woman">Женский</label>
+              </td>
+            </tr>
+            <tr>
+              <td class="title">
+                <label for="message">Комментарий:</label>
+              </td>
+              <td class="field">
+                <textarea id="message" name="message" placeholder="Нам интересно Ваше мнение!"></textarea>
+              </td>
+            </tr>
+            <tr>
+              <td class="title"></td>
+              <td class="field">
+                <input type="submit" class="btn btn-green" value="Отправить">
+              </td>
+            </tr>
+          </table>
+        </form>
+      </div>
+    </section>
+
+    <section class="contacts">
+      <div class="container">
+        <table>
+            <tr>
+              <td class="title">
+                <label for="fullname">Имя: {{name}}</label>
+              </td>
+            </tr>
+            <tr>
+              <td class="title">
+                <label for="fullname">Возраст: {{age}}</label>
+              </td>
+            </tr>
+            <tr>
+              <td class="title">
+                <label for="fullname">Комментарий: {{comment}}</label>
+              </td>
+            </tr>
+        </table>
+     </div>
+    </section>
+
+</body>
+</html>
